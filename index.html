@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Prácticas de java</title>
+<meta charset="UTF-8">
+<script>
+    var edad = prompt("¿Cuál es tu edad?");
+var edad1 = ("Tu edad es " + edad);
+document.write(edad1);
+var colorDePelo = prompt("¿Cuál es el color de tu pelo?");
+var pelo1 = (". Tu color de pelo es " + colorDePelo);
+document.write(pelo1);
+
+
+
+
+
+var x = parseInt(prompt("Dime un número."));
+var y = parseInt(prompt(" Dime otro"));
+var suma = x + y;
+var resultado = (". La suma de los dos número es " + suma);
+document.write(resultado);
+
+
+
+
+
+
+
+
+var edad = parseInt(prompt("Dime tu edad"));
+if (edad > 18) {document.write(". Eres mayor de edad")}
+else {document.write(". Eres menor de edad")};
+
+
+
+
+
+
+
+
+function preguntarIrALink() {
+
+
+   var confirmacion = confirm("¿Quieres ir a google.com?");
+
+
+
+
+   if (confirmacion) {
+       window.location.href = "https://www.google.com";
+   } else {
+      
+       console.log("El usuario canceló la navegación.");
+   }
+}
+
+
+
+
+preguntarIrALink();
+
+
+
+var número= prompt("Intenta adivinar un número entre el 1 y el 10");
+
+var número1 = (". Tu número era " + número);
+document.write(número1);
+
+
+var aleatorio = Math.round(Math.random()*10);
+var resultado = (". El número correcto era " + aleatorio);
+document.write(resultado);
+</script>
+</head>
+</html>
